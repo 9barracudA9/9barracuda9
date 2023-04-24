@@ -158,6 +158,14 @@ span {
     align-items: center;
 }
 
+.ai-fe {
+    align-items: flex-end;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
 .greet-img {
     max-width: 50%;
 }
@@ -262,4 +270,76 @@ span {
     font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 30px;
+}
+
+.achievements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.achievements img {
+    width: 75%;
+    height: 75%;
+}
+
+.projects-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects-subtitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.project-photos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.second-title {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 63px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.first-title {
+    border-bottom: #6D95FC 2px solid;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    max-width: max-content;
+}
+
+.column-desc {
+    max-width: 60%;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.advantages li {
+    padding-bottom: 10px;
+
+}
+
+.advantages li::before {
+    background-image: url("../img/Vector.svg");
 }
