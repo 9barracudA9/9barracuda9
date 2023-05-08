@@ -23,3 +23,15 @@ if (menuLinks.length > 0) {
         }
     }
 }
+
+const inputActive = document.querySelectorAll('.input')
+
+if (inputActive.length > 0) {
+    inputActive.forEach(e => {
+        e.addEventListener('click', function (event) {
+            if (e.value.textContent)
+                e.style.border = 'green 1px solid'
+            e.style.transition = 'all 0.3s'
+        })
+    })
+}
