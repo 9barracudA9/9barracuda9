@@ -27,11 +27,14 @@ if (menuLinks.length > 0) {
 const inputActive = document.querySelectorAll('.input')
 
 if (inputActive.length > 0) {
-    inputActive.forEach(e => {
-        e.addEventListener('click', function (event) {
-            if (e.value.textContent)
-                e.style.border = 'green 1px solid'
-            e.style.transition = 'all 0.3s'
+    inputActive.forEach(item => {
+        item.addEventListener('input', function (event) {
+            if (item.value.length > 0) {
+                item.style.border = 'green 1px solid'
+                item.style.transition = 'all 0.3s'
+            } else {
+                item.style.border = '1px rgb(110 102 102) solid'
+            }
         })
     })
 }

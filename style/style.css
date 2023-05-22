@@ -150,9 +150,14 @@ a:visited {
 
 }
 
+.nav-list a {
+    color: white;
+}
+
 .nav-list li:hover {
     text-decoration: underline;
     transition: all 0.2s;
+
 }
 
 
@@ -228,6 +233,17 @@ span {
     padding: 5px;
     letter-spacing: 2px;
     max-width: 150px;
+}
+
+.btn:hover {
+    background-color: #494747;
+    transition: background-color 0.3s;
+}
+
+.btn:active {
+    background-color: white;
+    color: #6D95FC;
+    transition: all 0.3s;
 }
 
 .about-title {
@@ -464,7 +480,7 @@ span {
 
 .contacts-title {
     font-size: 45px;
-    font-weight: 800;
+    font-weight: bold;
     line-height: 63px;
     text-transform: uppercase;
 
@@ -480,10 +496,12 @@ span {
 
 .contacts-column {
     width: 50%;
+    height: 100%;
 }
 
 .contacts-info {
     padding: 0;
+    margin: 0;
 }
 
 
@@ -514,36 +532,33 @@ span {
     border-radius: 34px;
     display: flex;
     justify-content: center;
-}
-
-.form-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-
+    height: 100%;
 }
 
 .form-wrapper div {
     color: #423f3f;
 }
 
-.form-wrapper textarea {
+.form-content textarea {
     background-color: transparent;
     resize: none;
     margin-bottom: 30px;
     width: 100%;
-    height: 50%;
     color: white;
+    height: 200px;
 }
 
 .input {
     background-color: transparent;
     border: 1px rgb(110 102 102) solid;
     color: white;
-    margin-bottom: 30px;
+    margin: 10px 0;
     width: 100%;
+    padding: 5px;
+}
+
+.msg {
+    margin: 10px 0;
 }
 
 footer {
@@ -553,6 +568,9 @@ footer {
 .form-content {
     padding: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-wrapper {
@@ -577,7 +595,6 @@ footer {
 }
 
 .footer-list li:hover {
-    transform: rotate(360deg);
     transition: all 2s;
     cursor: pointer;
     font-size: 22px;
