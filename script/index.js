@@ -13,6 +13,12 @@ if (menuLinks.length > 0) {
         if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
             const goToBlock = document.querySelector(menuLink.dataset.goto)
             const goToBlockValue = goToBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight
+            if (iconMenu.classList.contains('active')) {
+                document.body.classList.remove('lock')
+                iconMenu.classList.remove('active')
+                bodyMenu.classList.remove('active')
+            }
+
             window.scrollTo(
                 {
                     top: goToBlockValue,
@@ -38,3 +44,14 @@ if (inputActive.length > 0) {
         })
     })
 }
+
+const iconMenu = document.querySelector('.menu-icon')
+const bodyMenu = document.querySelector('.nav-list')
+if (iconMenu) {
+    iconMenu.addEventListener('click', function (ev) {
+        document.body.classList.toggle('lock')
+        iconMenu.classList.toggle('active')
+        bodyMenu.classList.toggle('active')
+    })
+}
+
