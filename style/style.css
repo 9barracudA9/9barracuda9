@@ -127,6 +127,11 @@ section {
     opacity: 0.7;
 }
 
+.navigation-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .header-logo {
     cursor: pointer;
 }
@@ -223,6 +228,7 @@ span {
 
 .greet-img img {
     height: 100%;
+    object-fit: cover;
 }
 
 .greet-desc {
@@ -645,7 +651,7 @@ footer {
     display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 857px) {
     .menu-icon {
         z-index: 5;
         display: block;
@@ -751,5 +757,120 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+@media (max-width: 1070px) {
+    .nav-list {
+        gap: 20px;
+    }
+
+    .header-logo {
+        transform: scale(0.7);
+        transition: all 0.3s ease;
+    }
+
+    .greet-img {
+        display: none;
+    }
+
+    .greet-text-box {
+        background-position: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .greetings {
+        margin-top: 0px;
+    }
+
+    .main-title {
+        font-weight: 800;
+    }
+
+    .about {
+        margin-top: 80px;
+    }
+
+    .about-subtitle {
+        font-size: 20px;
+        color: #5a5aea;
+        text-shadow: 1px 1px #04143f;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .about-text-box {
+        background: url("../img/—Pngtree—artificial intelligence management system robot_5339376 1.svg") no-repeat;
+        background-position: center;
+        width: 100%;
+        text-align: center;
+        text-shadow: 1px 1px #000000;
+    }
+
+    .about-title {
+        font-size: 40px;
+    }
+
+    .row.mb-60 {
+        display: block;
+    }
+
+    .services-text-box {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .services-desc {
+        max-width: 100%;
+    }
+
+    .cards {
+        max-width: 100%;
+    }
+
+    .achievements {
+        gap: 15px;
+    }
+
+    .achievements img {
+        transform: scale(0.6);
+        transition: all 0.3s ease;
+    }
+
+}
+
+@media (max-width: 967px) {
+    .navigation-wrapper {
+        font-size: 15px;
+
+    }
+
+    .nav-list {
+        gap: 12px;
+    }
+
+    .main-title {
+        font-size: 40px;
+    }
+
+
+    .nav-search {
+        transform: scale(0.8);
+        transition: all 0.3s ease;
+    }
+
+}
+
+@media (max-width: 770px) {
+    .achievements {
+        flex-wrap: wrap;
+    }
+
+    .achievements img {
+        min-width: 32%;
     }
 }
