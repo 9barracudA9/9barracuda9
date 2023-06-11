@@ -791,6 +791,15 @@ footer {
         text-align: center;
     }
 
+    .greet-desc {
+        max-width: 100%;
+    }
+
+    .about-desc {
+        max-width: 100%;
+    }
+
+
     .greetings {
         margin-top: 0px;
     }
@@ -957,6 +966,10 @@ footer {
     .footer-logo {
         transform: scale(0.7);
         transition: all 0.3s ease;
+    }
+
+    .footer-list {
+        padding: 0 5px;
     }
 
     .footer-list li {
