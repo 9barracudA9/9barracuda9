@@ -467,6 +467,7 @@ span {
     text-align: center;
     width: 25%;
     padding: 0px 15px;
+    z-index: 5;
 }
 
 .review-box {
@@ -956,6 +957,10 @@ footer {
     .footer-logo {
         transform: scale(0.7);
         transition: all 0.3s ease;
+    }
+
+    .footer-list li {
+        padding: 4px;
     }
 }
 
