@@ -176,6 +176,8 @@ a:visited {
 
 .greet-img img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .greet-title {
@@ -211,6 +213,7 @@ span {
 
 .ai-c {
     align-items: center;
+    display: flex;
 }
 
 .ai-fe {
@@ -369,9 +372,16 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
-.column {
+.project-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.column-text {
     display: flex;
     flex-direction: column;
     max-width: 50%;
@@ -389,12 +399,11 @@ span {
     border-bottom: #6D95FC 2px solid;
     padding-bottom: 5px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 22px;
     line-height: 22px;
     font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 30px;
-    max-width: max-content;
 }
 
 .column-desc {
@@ -457,6 +466,7 @@ span {
     align-items: center;
     text-align: center;
     width: 25%;
+    padding: 0px 15px;
 }
 
 .review-box {
@@ -841,6 +851,31 @@ footer {
         transition: all 0.3s ease;
     }
 
+    .project-photos {
+        gap: 10px;
+    }
+
+    .column-why-us {
+        text-align: center;
+    }
+
+    .first-title {
+        font-weight: 800;
+    }
+
+    .row-why-us {
+        display: block;
+    }
+
+    .column-text {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+
 }
 
 @media (max-width: 967px) {
@@ -873,4 +908,54 @@ footer {
     .achievements img {
         min-width: 32%;
     }
+
+    .box-text-author {
+        transform: scale(0.75);
+    }
+
+    .box-text {
+        letter-spacing: normal;
+        font-size: 13px;
+    }
+
+    .review-title {
+        font-size: 36px;
+    }
+
+    .row-contacts {
+        flex-direction: column;
+    }
+
+    .contacts-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contacts-desc {
+        max-width: 100%;
+    }
+
+    .contacts-info {
+        margin: 30px 0;
+    }
+
+    .footer-list {
+        gap: 0;
+        padding: 0;
+    }
+
+    .footer-desc {
+        font-size: 13px;
+        letter-spacing: normal;
+    }
+
+    .socials-icons {
+        padding: 0;
+    }
+
+    .footer-logo {
+        transform: scale(0.7);
+        transition: all 0.3s ease;
+    }
 }
+
