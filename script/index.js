@@ -55,3 +55,12 @@ if (iconMenu) {
     })
 }
 
+const csBtn = document.getElementById('btn')
+//
+const testFunc = () => {
+    const msg = prompt('Будеш кс сьогоднi?')
+    if (msg === 'так') {
+        alert('напиши менi в ТГ коли =)')
+    } else alert("Неправiльна вiдповiдь")
+}
+csBtn.addEventListener('click', testFunc)
